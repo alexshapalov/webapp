@@ -4,7 +4,7 @@ Recipe App is a catalog with a tasty and healthy recipe
 
 <p><img src="public/github/screenshot.png" style="width: 700px"/></p>
 
-> Created with Ruby SDK for the Contentful [Content Delivery API](https://www.contentful.com/developers/docs/references/content-delivery-api/) and [Content Preview API](https://www.contentful.com/developers/docs/references/content-preview-api/). It helps you to easily access your Content stored in Contentful with your Ruby applications.
+> Created with Ruby SDK for the Contentful [Content Delivery API](https://www.contentful.com/developers/docs/references/content-delivery-api/) and [Content Preview API](https://www.contentful.com/developers/docs/references/content-preview-api/). applications.
 
 
 ## Development Requirements
@@ -31,6 +31,9 @@ CONTENTFUL_ACCESS_TOKEN = 'access_token'
 CONTENTFUL_SPACE_ID = 'space_id'
 CONTENTFUL_ENVIRONMENT = 'master'
 
+## Pagination
+
+If you want to add pagination for items, plese use [Pagy](https://github.com/ddnexus/pagy) gem
 
 ## How to run the test suite
 
