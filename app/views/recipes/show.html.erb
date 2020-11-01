@@ -1,0 +1,29 @@
+<main role="main">
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-10">
+          <div class="card mb-4 box-shadow">
+            <div class="col-md-6 image">
+              <img src="http:<%= @resipe[:photo].url(width: 600, height: 600, format: 'jpg', quality: 100) %>">
+            </div>
+            <div class="card-body">
+              <p class="card-text"><%= @resipe[:title] %></p>
+              <p class="card-text"><%= @resipe[:description] %></p>
+              <p class="card-text"><%= @resipe[:chef]&.name %></p>
+              <p class="card-text">
+              <% if @resipe[:tags].present?  %>
+                <% @resipe[:tags].each do |tag| %>
+                  <%= tag.name %>
+                <% end %>
+              <% end %>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
