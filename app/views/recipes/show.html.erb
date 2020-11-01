@@ -9,13 +9,13 @@
               <img src="http:<%= @resipe[:photo].url(width: 600, height: 600, format: 'jpg', quality: 100) %>">
             </div>
             <div class="card-body">
-              <p class="card-text"><%= @resipe[:title] %></p>
+              <p class="lead"><%= @resipe[:title] %></p>
               <p class="card-text"><%= @resipe[:description] %></p>
               <p class="card-text"><%= @resipe[:chef]&.name %></p>
               <p class="card-text">
               <% if @resipe[:tags].present?  %>
                 <% @resipe[:tags].each do |tag| %>
-                  <%= tag.name %>
+                  <b><%= tag.name %></b>
                 <% end %>
               <% end %>
               </p>
