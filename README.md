@@ -23,13 +23,14 @@ bundle install
 
 ## Configuration
 
- Before start, you should have an API key and Space ID to an API on Contentful. Read more and create on [Content Delivery API](https://www.contentful.com/developers/docs/references/content-delivery-api/) 
+ Before start, you should have an API key and Space ID to an API on Contentful. 
+ Read more and create on [Content Delivery API](https://www.contentful.com/developers/docs/references/content-delivery-api/)
  
 Create **.env** file in root derectory and add your credantails:
 
-CONTENTFUL_ACCESS_TOKEN = 'access_token'
-CONTENTFUL_SPACE_ID = 'space_id'
-CONTENTFUL_ENVIRONMENT = 'master'
+CONTENTFUL_ACCESS_TOKEN = 'access_token' 
+CONTENTFUL_SPACE_ID = 'space_id' 
+CONTENTFUL_ENVIRONMENT = 'master' 
 
 ## Pagination
 
@@ -52,9 +53,8 @@ bundle exec rspec spec
 
 ## License
 
-  This repository is published under the MIT license.
+This repository is published under the MIT license.
 
 ## Copyright
 
 Copyright © 2020 Recipe Web App
-
