@@ -5,7 +5,6 @@ require File.expand_path('../config/environment', __dir__)
 # Prevent database truncation if the environment is production
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'rspec/rails'
-require 'database_cleaner'
 
 # Add additional requires below this line. Rails is not loaded until this point!
 
@@ -39,7 +38,6 @@ Shoulda::Matchers.configure do |config|
     with.library :rails
   end
 end
-
 
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
