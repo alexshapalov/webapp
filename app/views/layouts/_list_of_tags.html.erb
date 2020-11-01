@@ -1,0 +1,5 @@
+<% if @resipe[:tags].present?  %>
+  <% @resipe[:tags].each do |tag| %>
+    <b><%= tag.name %></b>
+  <% end %>
+<% end %>
