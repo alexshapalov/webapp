@@ -1,0 +1,23 @@
+require:
+  - rubocop-rails
+  - rubocop-performance
+
+AllCops:
+  NewCops: enable
+
+Documentation:
+  Enabled: false
+
+Rails/FindBy:
+  Exclude:
+    - 'app/views/**/*'
+    - 'db/**/*'
+    - 'bin/**/*'
+    - 'slate/**/*'
+    - 'vendor/bundle/**/*'
+    - 'node_modules/**/*'
+    - 'config'
+    - 'Gemfile'
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
