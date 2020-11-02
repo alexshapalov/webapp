@@ -1,9 +1,9 @@
 class Recipe < ApplicationRecord
-  def self.get_list
+  def self.all
     ContentfulClient.new.client.entries(content_type: 'recipe')
   end
 
-  def self.get_one(id)
+  def self.one(id)
     ContentfulClient.new.client.entry(id).fields
   end
 end

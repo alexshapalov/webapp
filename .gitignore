@@ -41,6 +41,3 @@ yarn-debug.log*
 .yarn-integrity
 
 .env
-/spec/cassettes/
-/spec/cassettes
-spec/cassettes
