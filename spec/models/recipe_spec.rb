@@ -1,5 +1,5 @@
 RSpec.describe Recipe do
-  context ".get_one" do
+  context ".get_one", :vcr do
     let(:recipe) { Recipe.get_one("5jy9hcMeEgQ4maKGqIOYW6") }
   
     it "should return recipe title" do
@@ -15,7 +15,7 @@ RSpec.describe Recipe do
     end    
   end
 
-  context ".get_list" do
+  context ".get_list", :vcr do
     let(:recipe) { Recipe.get_list }
     
     it "should return recipe array" do

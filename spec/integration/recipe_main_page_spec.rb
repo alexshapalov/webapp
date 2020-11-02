@@ -1,5 +1,5 @@
 RSpec.describe "Page with recipe details", type: :feature, js: true do
-  context "recipe page" do
+  context "recipe page", :vcr do
     before(:each) do
       visit root_path
       first(:link, "View").click
